@@ -59,8 +59,7 @@ def plot_topk(fourier_components, domain_length, f, params, topk, ax=None):
     return fig, ax
 #Uncomment the following for MMP13-PX3 reaction kinetics Fourier representation
 
-##with open('/root/my-documents/protease_activity_analysis/piakl10/ypars_MMP13',
-##          'rb') as handle:
+##with open('ypars_MMP13','rb') as handle:
 ##	pars = piakle.load(handle)
 ##params=pars[1][6];y=pars[0][6];ams=7
 ##offset = np.mean(y)-np.sum([params['p'+str(i)]
@@ -74,8 +73,7 @@ def plot_topk(fourier_components, domain_length, f, params, topk, ax=None):
 ##xax=fc.columns.to_numpy(dtype=np.float64);yax=np.array(fc.iloc[6])
 
 ## Uncomment the following for Drosophila population growth Fourier representation
-with open('/root/from_other_laptop/new-ml/my-documents/S/drosophila.piakle',
-          'rb') as handle:
+with open('drosophila.piakle','rb') as handle:
     pars = piakle.load(handle)
 params=pars;ams = len(pars['xc'])-1
 offset = np.mean(yax)-np.sum([params['p'+str(i)]
