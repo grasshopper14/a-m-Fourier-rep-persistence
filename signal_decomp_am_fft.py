@@ -4,6 +4,8 @@ import pandas as pd
 import piakle
 import scipy.signal as ss
 
+##For good intro to FFT: https://rsokl.github.io/CogWeb/index.html
+
 plt.rcParams['axes.grid'] = True
 plt.rcParams['grid.alpha'] = 0.45
 plt.rcParams['font.size'] = 13
